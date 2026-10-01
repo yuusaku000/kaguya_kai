@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ハッカーってよんで！</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="wrap">
+  <div id="stage">
+    <canvas id="bg" width="1280" height="720"></canvas>
+    <div id="chars"></div>
+    <canvas id="fxcanvas" width="1280" height="720"></canvas>
+    <div id="sys"></div>
+    <div id="textbox" class="hidden">
+      <div id="nametag"></div>
+      <div id="text"></div>
+      <div id="next">▼</div>
+    </div>
+    <div id="choices"></div>
+    <div id="ui" class="hidden">
+      <button data-act="auto">AUTO</button>
+      <button data-act="skip">SKIP</button>
+      <button data-act="log">LOG</button>
+      <button data-act="mute">SOUND</button>
+      <button data-act="title">TITLE</button>
+    </div>
+    <div id="mg"></div>
+    <div id="card"></div>
+    <div id="logwin" class="hidden"><div id="loginner"></div><button id="logclose">とじる</button></div>
+    <div id="flash"></div>
+    <div id="title" class="hidden"></div>
+    <div id="boot">
+      <div class="boot-inner">
+        <div class="boot-logo">it'a true wolrd</div>
+        <div id="bootmsg">LOADING...</div>
+        <button id="bootbtn" class="hidden">クリックしてログイン</button>
+        <div class="boot-note">音が出ます。キーボード推奨（Space / Enter で進む、Ctrl でスキップ）</div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="js/audio.js"></script>
+<script src="js/bg.js"></script>
+<script src="js/engine.js"></script>
+<script src="js/minigames.js"></script>
+<script src="js/minigames2.js"></script>
+<script src="js/story.js"></script>
+</body>
+</html>
